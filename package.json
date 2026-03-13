@@ -1,0 +1,22 @@
+{
+  "name": "scheduler-heating-card",
+  "version": "1.0.0",
+  "description": "Mobile-friendly HACS Lovelace card for scheduling number entities (e.g. heating setpoints)",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js --watch",
+    "dev": "rollup -c rollup.config.js --watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.9.5",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
+  }
+}

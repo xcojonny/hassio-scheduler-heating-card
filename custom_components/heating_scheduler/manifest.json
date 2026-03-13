@@ -1,0 +1,12 @@
+{
+  "domain": "heating_scheduler",
+  "name": "Heating Scheduler",
+  "version": "1.0.0",
+  "documentation": "https://github.com/xcojonny/hassio-scheduler-heating-card",
+  "issue_tracker": "https://github.com/xcojonny/hassio-scheduler-heating-card/issues",
+  "dependencies": [],
+  "codeowners": ["@xcojonny"],
+  "requirements": [],
+  "iot_class": "local_push",
+  "config_flow": false
+}
