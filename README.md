@@ -1,0 +1,1 @@
+# hassio-scheduler-heating-card
