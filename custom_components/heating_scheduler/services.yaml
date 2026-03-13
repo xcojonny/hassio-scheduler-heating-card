@@ -1,0 +1,51 @@
+save_schedule:
+  name: Save Schedule
+  description: Create or update a heating schedule.
+  fields:
+    schedule_id:
+      name: Schedule ID
+      description: Unique identifier for this schedule.
+      required: true
+      example: "living_room"
+      selector:
+        text:
+    name:
+      name: Name
+      description: Human-readable name.
+      example: "Living Room"
+      selector:
+        text:
+    rooms:
+      name: Rooms
+      description: List of rooms with their number entity IDs.
+      required: true
+      selector:
+        object:
+    workday_entity:
+      name: Workday Entity
+      description: Entity ID of the workday binary sensor.
+      example: "binary_sensor.workday_sensor"
+      selector:
+        entity:
+          domain: binary_sensor
+    profiles:
+      name: Profiles
+      description: "Map of profile keys (workday/weekend/holiday/monday...) to time-value points."
+      required: true
+      selector:
+        object:
+
+delete_schedule:
+  name: Delete Schedule
+  description: Remove a heating schedule.
+  fields:
+    schedule_id:
+      name: Schedule ID
+      description: ID of the schedule to delete.
+      required: true
+      selector:
+        text:
+
+get_schedules:
+  name: Get Schedules
+  description: Fire an event with all stored schedules (read by the Lovelace card).
